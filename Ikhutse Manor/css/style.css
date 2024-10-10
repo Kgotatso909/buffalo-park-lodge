@@ -1,0 +1,108 @@
+/* Import custome fonts from fonts.css file */
+@import url("./fonts.css");
+@import url("./partials/variables.css");
+@import url("./mediaquery.css");
+
+/* start navigation */
+.header_area .main-menu .navbar .navbar-brand {
+  padding: 0 2rem 0 5rem;
+}
+
+.header_area .main-menu .navbar {
+  position: fixed;
+  min-width: 100%;
+  background: var(--bg-secondary-dark);
+  z-index: 10000;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+  font-family: var(--page-font);
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0.8rem;
+  color: var(--text-color);
+}
+
+.header_area .main-menu .navbar-nav a {
+  text-align: center;
+  transition: all 0.8s;
+}
+
+.header_area .main-menu .navbar-nav a:hover {
+  border-bottom: 3px solid blue;
+}
+
+/* Hero section starts here */
+
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/images/hero-bg-picture.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100dvh;
+}
+
+@media (max-width: 880px) {
+  .hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/images/hero-bg-phone.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100dvh;
+  }
+}
+
+.hero-bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00000055;
+}
+
+.hero-content {
+  z-index: 1;
+}
+.hero h1 {
+  color: #fff;
+  font-family: var(--title-font);
+  text-transform: capitalize;
+}
+
+.hero p {
+  color: #fff;
+}
+
+.hero .btn-book:hover {
+  color: #fff;
+}
+
+.hero .btn-contact:hover {
+  color: #0dcaf0;
+}
+
+/* Service starts here */
+@media (max-width: 576px) {
+  .service-section {
+    text-align: center;
+  }
+}
+
+/* Gallery starts here */
+.gallery-section .card-cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
